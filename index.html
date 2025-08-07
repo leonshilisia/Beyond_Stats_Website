@@ -1,122 +1,80 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Beyond Financial Solutions empowers SMEs in Kenya with custom dashboards, forecasting tools, and data-driven strategies.">
-  <meta name="keywords" content="SME analytics Kenya, Power BI dashboards, cashflow forecasting, customer segmentation, AI automation">
-  <meta name="author" content="Leon Shilisia">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beyond Financial Solutions | Data-Driven Growth for SMEs</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beyond Financial Solutions</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; color: #212529; background-color: #f8f9fa; }
+    .navbar { background-color: #0056b3; }
+    .navbar-brand, .nav-link { color: #fff !important; }
+    .hero { background-color: #0056b3; color: #fff; padding: 100px 0; text-align: center; }
+    .section-title { text-align: center; margin-bottom: 40px; color: #212529; }
+    .card-title { font-weight: 600; }
+    .btn-primary { background-color: #0056b3; border: none; }
+    footer { background-color: #343a40; color: #fff; padding: 40px 0; text-align: center; }
+  </style>
 </head>
 <body>
 
-<!-- Navigation Bar -->
-<nav class="navbar">
-  <ul>
-    <li class="brand"><a href="#">Beyond Financial Solutions</a></li>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About Us</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#projects">Portfolio</a></li>
-    <li><a href="#why-us">Why Us</a></li>
-    <li><a href="#testimonials">Testimonials</a></li>
-    <li><a href="#blog">Insights</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
-
-<!-- Hero Section -->
-<header id="home">
-  <div class="overlay-text">
-    <h1>Empowering SMEs with data-driven decisions through tailored dashboards and analytics tools.</h1>
-    <button onclick="location.href='#contact'">Request a Demo</button>
-  </div>
-</header>
-
-<!-- About Us -->
-<section id="about">
-  <h2>About Us</h2>
-  <p>Beyond Financial Solutions is a Nairobi-based consultancy helping SMEs unlock growth through smart data strategies. Led by Leon Shilisia, we combine analytics, automation, and business insight to deliver measurable impact.</p>
-</section>
-
-<!-- Services -->
-<section id="services">
-  <h2>Our Services</h2>
-  <div class="service-grid">
-    <div class="service-card">
-      <i class="fas fa-chart-line"></i>
-      <h3>Dashboard Design</h3>
-      <p>Custom dashboards tailored to your KPIs and decision-making needs.</p>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">Beyond Financial Solutions</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="service-card">
-      <i class="fas fa-coins"></i>
-      <h3>Cashflow Forecasting</h3>
-      <p>Predict revenue and expenses using regression models and trends.</p>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Empowering SMEs with Data-Driven Growth</h1>
+      <p class="lead">Analytics, Automation, and Strategic Insights for East Africa</p>
     </div>
-    <div class="service-card">
-      <i class="fas fa-users"></i>
-      <h3>Customer Segmentation</h3>
-      <p>Use RFM analysis to identify high-value customers and optimize marketing.</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="section-title">About Us</h2>
+      <p>We help small and medium enterprises unlock growth through actionable data insights, custom dashboards, and workflow automation. Our approach blends technical rigor with strategic branding to deliver measurable impact.</p>
     </div>
-    <div class="service-card">
-      <i class="fas fa-shield-alt"></i>
-      <h3>Fraud Detection</h3>
-      <p>Spot anomalies using AI-enhanced logic and Excel modeling.</p>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- Portfolio -->
-<section id="projects">
-  <h2>Portfolio</h2>
-  <p>Explore our case studies and dashboard samples that helped SMEs reduce reporting time, improve cashflow visibility, and boost customer retention.</p>
-  <!-- Add carousel or image gallery here -->
-</section>
-
-<!-- Why Us -->
-<section id="why-us">
-  <h2>Why Choose Us</h2>
-  <ul>
-    <li>Local expertise with global standards</li>
-    <li>Business-first approach to analytics</li>
-    <li>Proven results with SMEs across sectors</li>
-    <li>Flexible, affordable solutions tailored to your growth stage</li>
-  </ul>
-</section>
-
-<!-- Testimonials -->
-<section id="testimonials">
-  <h2>Client Testimonials</h2>
-  <blockquote>
-    “Beyond Financial helped us visualize our cashflow and make smarter inventory decisions. Highly recommend!” — Jane Mwangi, Retail SME Owner
-  </blockquote>
-</section>
-
-<!-- Blog -->
-<section id="blog">
-  <h2>Insights & Resources</h2>
-  <p>Read our latest posts on SME growth, analytics tips, and automation strategies.</p>
-</section>
-
-<!-- Contact -->
-<section id="contact">
-  <h2>Let’s Talk Data</h2>
-  <form action="mailto:info@beyondfinancial.co.ke" method="post" enctype="text/plain">
-    <label for="name">Name:</label><input type="text" id="name" name="name" required>
-    <label for="email">Email:</label><input type="email" id="email" name="email" required>
-    <label for="message">Message:</label><textarea id="message" name="message"></textarea>
-    <button type="submit">Send</button>
-  </form>
-</section>
-
-<!-- Footer -->
-<footer>
-  <p>&copy; 2025 Beyond Financial Solutions. All rights reserved.</p>
-  <p><a href="#blog">Newsletter Signup</a> | <a href="#privacy">Privacy Policy</a></p>
-</footer>
-
-</body>
-</html>
+  <!-- Services Section -->
+  <section id="services" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Business Dashboards</h5>
+              <p class="card-text">Interactive Power BI and Excel dashboards tailored to your KPIs.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Workflow Automation</h5>
+              <p class="card-text">Streamline operations with Python scripts and automated reporting.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Digital Strategy</h5>
+              <p class="card-text">SEO, branding,
