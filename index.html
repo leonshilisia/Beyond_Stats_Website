@@ -5,117 +5,139 @@
   <meta name="description" content="Beyond Financial Solutions empowers SMEs in Kenya with custom dashboards, forecasting tools, and data-driven strategies.">
   <meta name="keywords" content="SME analytics Kenya, Power BI dashboards, cashflow forecasting, customer segmentation, AI automation">
   <meta name="author" content="Leon Shilisia">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Beyond Financial Solutions | Data-Driven Growth for SMEs</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!-- Bootstrap & Icons -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom Theme -->
+  <style>
+    :root {
+      --primary-color: #0056b3;
+      --light-bg: #f8f9fa;
+      --dark-bg: #343a40;
+      --text-dark: #212529;
+    }
+
+    body {
+      background-color: var(--light-bg);
+      color: var(--text-dark);
+      padding-top: 70px;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: var(--primary-color);
+    }
+
+    .navbar-brand {
+      font-weight: 600;
+      letter-spacing: 0.2px;
+    }
+
+    /* Sections */
+    .page-section {
+      padding: 60px 0;
+    }
+
+    /* Hero */
+    header#home {
+      background: linear-gradient(135deg, #0b61c2 0%, #004a93 100%);
+      color: #fff;
+      padding: 100px 0;
+      position: relative;
+    }
+
+    header#home .overlay-text {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    header#home h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 1.4;
+      margin-bottom: 24px;
+    }
+
+    /* Buttons */
+    .btn-primary {
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+    }
+    .btn-primary:hover {
+      background-color: #004a93;
+      border-color: #004a93;
+    }
+
+    /* Cards & Titles */
+    .section-title {
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+
+    .card {
+      border: 0;
+      border-radius: 8px;
+    }
+
+    .card-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    /* Icons */
+    .icon-xl {
+      font-size: 2rem;
+      color: var(--primary-color);
+      margin-bottom: 12px;
+    }
+
+    /* Contact */
+    #contact {
+      background-color: var(--primary-color);
+      color: #fff;
+    }
+
+    #contact .form-control {
+      border-radius: 6px;
+      border: none;
+    }
+
+    #contact .form-control:focus {
+      box-shadow: 0 0 0 0.2rem rgba(255,255,255,0.15);
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--dark-bg);
+      color: #bbb;
+      padding: 20px 0;
+    }
+    footer a { color: #fff; text-decoration: underline; }
+  </style>
 </head>
+
 <body>
 
-<!-- Navigation Bar -->
-<nav class="navbar">
-  <ul>
-    <li class="brand"><a href="#">Beyond Financial Solutions</a></li>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About Us</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#projects">Portfolio</a></li>
-    <li><a href="#why-us">Why Us</a></li>
-    <li><a href="#testimonials">Testimonials</a></li>
-    <li><a href="#blog">Insights</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Beyond Financial Solutions</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+              aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-<!-- Hero Section -->
-<header id="home">
-  <div class="overlay-text">
-    <h1>Empowering SMEs with data-driven decisions through tailored dashboards and analytics tools.</h1>
-    <button onclick="location.href='#contact'">Request a Demo</button>
-  </div>
-</header>
-
-<!-- About Us -->
-<section id="about">
-  <h2>About Us</h2>
-  <p>Beyond Financial Solutions is a Nairobi-based consultancy helping SMEs unlock growth through smart data strategies. Led by Leon Shilisia, we combine analytics, automation, and business insight to deliver measurable impact.</p>
-</section>
-
-<!-- Services -->
-<section id="services">
-  <h2>Our Services</h2>
-  <div class="service-grid">
-    <div class="service-card">
-      <i class="fas fa-chart-line"></i>
-      <h3>Dashboard Design</h3>
-      <p>Custom dashboards tailored to your KPIs and decision-making needs.</p>
-    </div>
-    <div class="service-card">
-      <i class="fas fa-coins"></i>
-      <h3>Cashflow Forecasting</h3>
-      <p>Predict revenue and expenses using regression models and trends.</p>
-    </div>
-    <div class="service-card">
-      <i class="fas fa-users"></i>
-      <h3>Customer Segmentation</h3>
-      <p>Use RFM analysis to identify high-value customers and optimize marketing.</p>
-    </div>
-    <div class="service-card">
-      <i class="fas fa-shield-alt"></i>
-      <h3>Fraud Detection</h3>
-      <p>Spot anomalies using AI-enhanced logic and Excel modeling.</p>
-    </div>
-  </div>
-</section>
-
-<!-- Portfolio -->
-<section id="projects">
-  <h2>Portfolio</h2>
-  <p>Explore our case studies and dashboard samples that helped SMEs reduce reporting time, improve cashflow visibility, and boost customer retention.</p>
-  <!-- Add carousel or image gallery here -->
-</section>
-
-<!-- Why Us -->
-<section id="why-us">
-  <h2>Why Choose Us</h2>
-  <ul>
-    <li>Local expertise with global standards</li>
-    <li>Business-first approach to analytics</li>
-    <li>Proven results with SMEs across sectors</li>
-    <li>Flexible, affordable solutions tailored to your growth stage</li>
-  </ul>
-</section>
-
-<!-- Testimonials -->
-<section id="testimonials">
-  <h2>Client Testimonials</h2>
-  <blockquote>
-    “Beyond Financial helped us visualize our cashflow and make smarter inventory decisions. Highly recommend!” — Jane Mwangi, Retail SME Owner
-  </blockquote>
-</section>
-
-<!-- Blog -->
-<section id="blog">
-  <h2>Insights & Resources</h2>
-  <p>Read our latest posts on SME growth, analytics tips, and automation strategies.</p>
-</section>
-
-<!-- Contact -->
-<section id="contact">
-  <h2>Let’s Talk Data</h2>
-  <form action="mailto:info@beyondfinancial.co.ke" method="post" enctype="text/plain">
-    <label for="name">Name:</label><input type="text" id="name" name="name" required>
-    <label for="email">Email:</label><input type="email" id="email" name="email" required>
-    <label for="message">Message:</label><textarea id="message" name="message"></textarea>
-    <button type="submit">Send</button>
-  </form>
-</section>
-
-<!-- Footer -->
-<footer>
-  <p>&copy; 2025 Beyond Financial Solutions. All rights reserved.</p>
-  <p><a href="#blog">Newsletter Signup</a> | <a href="#privacy">Privacy Policy</a></p>
-</footer>
-
-</body>
-</html>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#why-us">Why Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link
